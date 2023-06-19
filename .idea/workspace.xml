@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fe26c4d-1b34-415c-9eea-4fe637fa11db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/RecipeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/weewsa/recipebookv3/RecipeBookApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/RecipeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/JWTService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/dto/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/dto/AuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/dto/RefreshTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/dto/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/exception/InvalidToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/exception/NotAuthorized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/exception/NotEnoughRights.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/RecipeResponseCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/RecipeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/IngredientRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/NameAndTagsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/NameRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/RecipeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/StepRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/TagRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/UserReactionToRecipeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/exception/RecipeNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/user/exception/UserAlreadyExists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/user/exception/UserNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/IngredientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/RecipeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/RefreshTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/StepRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/TagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RNZRparOQjXLbp8fZUKy1nHeXx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "D:/Projects/Java/recipebookv3/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "spring.configuration.checksum": "07dcd99bbe322752b3afed16237f4a3b",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\Java\recipebookv3\src\main\java" />
+      <recent name="D:\Projects\Java\recipebookv3\app\src\main\resources" />
+      <recent name="D:\Projects\Java\recipebookv3\core\src\main\resources" />
+      <recent name="D:\Projects\Java\recipebookv3\persistence\src\main\resources" />
+      <recent name="D:\Projects\Java\recipebookv3\app\src\main\java\com\weewsa\recipebookv2" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RecipeBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.weewsa.recipebookv3.RecipeBookApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weewsa.recipebookv3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fe26c4d-1b34-415c-9eea-4fe637fa11db" name="Changes" comment="" />
+      <created>1687092499281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687092499281</updated>
+      <workItem from="1687092500508" duration="10449000" />
+      <workItem from="1687208375563" duration="3114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/recipebookv3$RecipeBookApplication.ic" NAME="RecipeBookApplication Coverage Results" MODIFIED="1687208352271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.weewsa.recipebookv3.*</FILTER>
+    </SUITE>
+  </component>
+</project>
