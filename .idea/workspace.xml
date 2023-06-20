@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe26c4d-1b34-415c-9eea-4fe637fa11db" name="Changes" comment="add redis, prepare to move refresh token from db to redis">
+    <list default="true" id="8fe26c4d-1b34-415c-9eea-4fe637fa11db" name="Changes" comment="move refresh token from db to redis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/TestRedisController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/model/refreshToken/RefreshToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/model/refreshToken/RefreshToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/model/redisToken/RedisToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/RedisTokenRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/RefreshTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/RefreshTokenRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +125,7 @@
       <workItem from="1687092500508" duration="10449000" />
       <workItem from="1687208375563" duration="4439000" />
       <workItem from="1687214144333" duration="1399000" />
-      <workItem from="1687269405159" duration="6980000" />
+      <workItem from="1687269405159" duration="7682000" />
     </task>
     <task id="LOCAL-00001" summary="modular project structure and add new methods in UserService">
       <created>1687212347727</created>
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687289515702</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="move refresh token from db to redis">
+      <created>1687293651426</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687293651426</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +176,8 @@
     <MESSAGE value="modular project structure and add new methods in UserService" />
     <MESSAGE value="additional to last commit" />
     <MESSAGE value="add redis, prepare to move refresh token from db to redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="add redis, prepare to move refresh token from db to redis" />
+    <MESSAGE value="move refresh token from db to redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="move refresh token from db to redis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -178,6 +186,16 @@
           <url>file://$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/UserController.java</url>
           <line>57</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/UserController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/UserController.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

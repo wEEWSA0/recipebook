@@ -21,7 +21,7 @@ public class RedisConfig {
         configuration.setPort(6379);
         return new JedisConnectionFactory(configuration);
     }
-
+/*
     @Bean
     public RedisTemplate<String, Object> template() {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
@@ -33,7 +33,7 @@ public class RedisConfig {
         template.setEnableTransactionSupport(true);
         template.afterPropertiesSet();
         return template;
-    }
+    }*/
 
     @Bean
     public RedisTemplate<String, RefreshToken> refreshTokenRedisTemplate() {
