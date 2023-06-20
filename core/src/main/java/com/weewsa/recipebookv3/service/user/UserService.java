@@ -34,6 +34,16 @@ public class UserService {
         return userRepository.findIdByLogin(login);
     }
 
+    public User getById(Long id) throws UserNotFound {
+        var foundUser = userRepository.findById(id);
+
+        if (foundUser.isEmpty()) {
+            throw new UserNotFound("User not found");
+        }
+
+        return foundUser.get();
+    }
+
     public User getByLogin(String login) throws UserNotFound {
         var foundUser = userRepository.findByLogin(login);
 

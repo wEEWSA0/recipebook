@@ -29,7 +29,7 @@ public class AuthenticationService {
     private Duration REFRESH_TOKEN_EXPIRATION;
     private final JWTService jwtService;
     private final UserService userService;
-    private final RefreshTokenRepository tokenRepository; // todo redis
+    private final RefreshTokenRepository tokenRepository;
     private final PasswordEncoder passwordEncoder;
 
     public AuthenticationResponse register(RegisterRequest request) throws UserAlreadyExists, UserNotFound {
@@ -63,13 +63,13 @@ public class AuthenticationService {
     }
 
     public AuthenticationResponse authenticateByRefreshToken(String refreshToken) throws InvalidToken, UserNotFound {
-        var foundToken = tokenRepository.findRefreshTokenByToken(refreshToken);
+        var foundToken = tokenRepository.findByToken(refreshToken);
 
         if (foundToken.isEmpty()) {
             throw new InvalidToken("Invalid refresh token");
         }
 
-        User user = foundToken.get().getUser();
+        User user = userService.getById(foundToken.get().getUserId());
 
         return createNewUserTokens(user.getLogin(), user.getRole());
     }
@@ -77,12 +77,11 @@ public class AuthenticationService {
     private AuthenticationResponse createNewUserTokens(String login, Role role) throws UserNotFound {
         String refreshToken = jwtService.generateRefreshToken(login, REFRESH_TOKEN_EXPIRATION);
 
-        var user = userService.getByLogin(login);
+        var userId = userService.getIdByLogin(login);
 
         tokenRepository.save(RefreshToken.builder()
                 .token(refreshToken)
-                .user(user)
-                .userId(user.getId())
+                .userId(userId)
                 .build());
 
         Map<String, Object> accessTokenClaims = new HashMap<>();
