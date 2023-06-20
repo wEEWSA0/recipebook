@@ -4,61 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe26c4d-1b34-415c-9eea-4fe637fa11db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/RecipeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/weewsa/recipebookv3/RecipeBookApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/RecipeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/JWTService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/dto/AuthenticationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/dto/AuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/dto/RefreshTokenRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/dto/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/exception/InvalidToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/exception/NotAuthorized.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/authenticate/exception/NotEnoughRights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/RecipeResponseCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/RecipeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/IngredientRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/NameAndTagsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/NameRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/RecipeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/StepRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/TagRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/dto/UserReactionToRecipeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/recipe/exception/RecipeNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/user/exception/UserAlreadyExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/weewsa/recipebookv3/service/user/exception/UserNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/IngredientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/RecipeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/RefreshTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/StepRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/TagRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="8fe26c4d-1b34-415c-9eea-4fe637fa11db" name="Changes" comment="additional to last commit">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/weewsa/recipebookv3/controller/TestRedisController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/model/redisToken/RedisToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/weewsa/recipebookv3/repository/RedisTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="20c023e0-2f52-418d-991d-4b8810f13078" />
+        <option name="url" value="https://github.com/wEEWSA0/recipebook" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,30 +56,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "D:/Projects/Java/recipebookv3/src/main/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "spring.configuration.checksum": "07dcd99bbe322752b3afed16237f4a3b",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java/recipebookv3/src/main/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;07dcd99bbe322752b3afed16237f4a3b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\Java\recipebookv3\src\main\java" />
@@ -133,8 +123,25 @@
       <option name="presentableId" value="Default" />
       <updated>1687092499281</updated>
       <workItem from="1687092500508" duration="10449000" />
-      <workItem from="1687208375563" duration="3114000" />
+      <workItem from="1687208375563" duration="4439000" />
+      <workItem from="1687214144333" duration="1399000" />
+      <workItem from="1687269405159" duration="2151000" />
     </task>
+    <task id="LOCAL-00001" summary="modular project structure and add new methods in UserService">
+      <created>1687212347727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687212347727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="additional to last commit">
+      <created>1687212441121</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687212441121</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +157,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modular project structure and add new methods in UserService" />
+    <MESSAGE value="additional to last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional to last commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/recipebookv3$RecipeBookApplication.ic" NAME="RecipeBookApplication Coverage Results" MODIFIED="1687208352271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
